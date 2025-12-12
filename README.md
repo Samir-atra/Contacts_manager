@@ -1,5 +1,7 @@
 # Connect Hub Contacts: Technical Deep Dive & Writeup
 
+Demo video: [Youtube Link](https://youtu.be/n_tSgYDVM1c)
+
 ## Abstract
 Connect Hub Contacts is a frontend-focused contact management system engineered to demonstrate modern React patterns, TypeScript integration, and responsive UI design without the overhead of a backend. This application serves as a case study for building performant CRUD (Create, Read, Update, Delete) applications with complex filtering and state management capabilities purely on the client side.
 
