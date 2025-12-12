@@ -4,7 +4,7 @@
 Connect Hub Contacts is a frontend-focused contact management system engineered to demonstrate modern React patterns, TypeScript integration, and responsive UI design without the overhead of a backend. This application serves as a case study for building performant CRUD (Create, Read, Update, Delete) applications with complex filtering and state management capabilities purely on the client side.
 
 ## 1. Project Goal
-The primary objective was to build a "List manager" of personal connections—a centralized, intuitive interface to manage contacts, categorize them into custom groups, and retrieve them instantly.
+The primary objective was to build a "Connect Hub" of personal connections—a centralized, intuitive interface to manage contacts, categorize them into custom groups, and retrieve them instantly.
 
 **Core Requirements Met:**
 *   **Data Persistence**: Seamless saving of contacts and groups.
