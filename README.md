@@ -58,3 +58,6 @@ Unlike static categories, the Group system is dynamic.
 
 ## 5. Conclusion
 Connect Hub Contacts demonstrates that complex data management flows can be elegantly handled on the client side. By leveraging React's hooks for derived state and side effects, the application achieves a high degree of interactivity and performance while maintaining a clean, type-safe codebase.
+
+## For best use case
+check out the [Courtesy agent](https://github.com/Samir-atra/courtesy_agent)
