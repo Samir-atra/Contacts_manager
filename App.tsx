@@ -142,6 +142,7 @@ const App = () => {
     const csvData = contacts.map(c => {
         const groupName = groups.find(g => g.id === c.groupId)?.name || '';
         return {
+            'Prefix': c.prefix || '',
             'First Name': c.firstName,
             'Last Name': c.lastName,
             'Email': c.email,
@@ -213,6 +214,7 @@ const App = () => {
 
                 newContacts.push({
                     id: generateId(),
+                    prefix: row['Prefix'] || row['prefix'] || '',
                     firstName: firstName,
                     lastName: lastName,
                     email: row['Email'] || row['email'] || '',
@@ -592,6 +594,7 @@ const App = () => {
                                     </div>
                                     <div className="flex-1 min-w-0">
                                         <h3 className="font-bold text-gray-900 truncate">
+                                            {contact.prefix && <span className="mr-1 opacity-75 font-normal">{contact.prefix}</span>}
                                             {contact.firstName} {contact.lastName}
                                         </h3>
                                         <p className="text-xs text-gray-500 truncate mb-1">

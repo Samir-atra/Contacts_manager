@@ -10,6 +10,7 @@ interface ContactFormProps {
 
 export const ContactForm: React.FC<ContactFormProps> = ({ initialData, groups, onSubmit, onCancel }) => {
   const [formData, setFormData] = useState<ContactFormData>({
+    prefix: '',
     firstName: '',
     lastName: '',
     email: '',
@@ -22,6 +23,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialData, groups, o
   useEffect(() => {
     if (initialData) {
       setFormData({
+        prefix: initialData.prefix || '',
         firstName: initialData.firstName,
         lastName: initialData.lastName,
         email: initialData.email,
@@ -40,8 +42,22 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialData, groups, o
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
+      <div className="flex gap-4">
+        <div className="w-1/4 min-w-[80px]">
+          <label className="block text-sm font-medium text-gray-700 mb-1">Prefix</label>
+          <select
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
+            value={formData.prefix}
+            onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+          >
+            <option value="">-</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+          </select>
+        </div>
+        <div className="flex-1">
           <label className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
           <input
             type="text"
@@ -52,7 +68,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialData, groups, o
             placeholder="John"
           />
         </div>
-        <div>
+        <div className="flex-1">
           <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
           <input
             type="text"

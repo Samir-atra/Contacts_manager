@@ -1,5 +1,6 @@
 export interface Contact {
   id: string;
+  prefix?: string;
   firstName: string;
   lastName: string;
   email: string;
@@ -25,6 +26,7 @@ export enum SortOption {
 }
 
 export interface ContactFormData {
+  prefix: string;
   firstName: string;
   lastName: string;
   email: string;
