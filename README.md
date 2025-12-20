@@ -1,5 +1,15 @@
 # Connect Hub Contacts: Technical Deep Dive & Writeup
 
+
+[![GitHub stars](https://img.shields.io/github/stars/Samir-atra/Contacts_manager.svg?style=social&label=Star)](https://github.com/Samir-atra/Contacts_manager)
+[![GitHub forks](https://img.shields.io/github/forks/Samir-atra/Contacts_manager.svg?style=social&label=Fork)](https://github.com/Samir-atra/Contacts_manager/fork)
+[![GitHub issues](https://img.shields.io/github/issues/Samir-atra/Contacts_manager.svg)](https://github.com/Samir-atra/Contacts_manager/issues)
+[![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB.svg?logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=samiratra95@gmail.com&item_name=Code+Broker+Donation&currency_code=USD)
+[![Demo Video](https://img.shields.io/badge/Demo%20Video-YouTube-red.svg)](https://youtu.be/n_tSgYDVM1c)
+
 ## Abstract
 Connect Hub Contacts is a frontend-focused contact management system engineered to demonstrate modern React patterns, TypeScript integration, and responsive UI design without the overhead of a backend. This application serves as a case study for building performant CRUD (Create, Read, Update, Delete) applications with complex filtering and state management capabilities purely on the client side.
 
